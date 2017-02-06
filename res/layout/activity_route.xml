@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/imagebtn_roadsearch_tab_transit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="公交"/>
+        <Button 
+            android:id="@+id/imagebtn_roadsearch_tab_driving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="驾车"/>
+        <Button 
+            android:id="@+id/imagebtn_roadsearch_tab_walk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="步行"/>
+    </LinearLayout>
+    
+    <com.amap.api.maps2d.MapView 
+	    android:id="@+id/route_map"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+
+</LinearLayout>

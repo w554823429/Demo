@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.demo"  
+    xmlns:tools="http://schemas.android.com/tools"    
+    android:layout_width="match_parent"    
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F25E38" >    
+    
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"    
+    	android:layout_height="match_parent"
+    	android:scaleType="centerInside"></ImageView>
+    
+	    <com.example.demo.ArcProgressBar
+	        android:id="@+id/arcProgressBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="70dp"
+	        android_custom:arcText="ddd"
+        android:visibility="gone"/>
+	   
+    
+    <com.example.demo.RoundProgressBar    
+        android:id="@+id/roundProgressBar2"    
+        android:layout_width="80dip"    
+        android:layout_height="80dip"    
+        android:layout_alignParentBottom="true"    
+        android:layout_marginBottom="78dp"    
+        android_custom:roundColor="#CCCCCC"    
+        android_custom:roundProgressColor="#EE0000"    
+        android_custom:textColor="#EE0000" 
+        android_custom:roundWidth="6dp"    
+        android_custom:textSize="12dp"
+        android:visibility="gone"/>  
+       <!--  android_custom:textIsDisplayable="false"    --> 
+     <Button 
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"
+        android:text="显示" 
+        android:onClick="show"
+        android:visibility="gone"  />
+     <Button 
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"
+        android:text="关闭" 
+        android:onClick="close" 
+        android:visibility="gone" /> 
+</LinearLayout>

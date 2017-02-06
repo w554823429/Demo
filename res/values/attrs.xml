@@ -1,0 +1,92 @@
+<resources>
+    <declare-styleable name="CircularProgressView">
+        <attr name="cpv_progress" format="float" />
+        <attr name="cpv_maxProgress" format="float" />
+        <attr name="cpv_animDuration" format="integer" />
+        <attr name="cpv_animSwoopDuration" format="integer" />
+        <attr name="cpv_animSyncDuration" format="integer" />
+        <attr name="cpv_color" format="color"/>
+        <attr name="cpv_thickness" format="dimension"/>
+        <attr name="cpv_indeterminate" format="boolean" />
+        <attr name="cpv_animAutostart" format="boolean" />
+        <attr name="cpv_animSteps" format="integer" />
+        <attr name="cpv_startAngle" format="float" />
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="ArcProgressBar">
+        <attr name="arcDistance" format="integer"/>
+        <attr name="arcBgColor" format="color"/>
+        <attr name="dottedDefaultColor" format="color"/>
+        <attr name="dottedRunColor" format="color"/>
+        <attr name="dottedLineCount" format="integer"/>
+        <attr name="dottedLineWidth" format="integer"/>
+        <attr name="dottedLineHeight" format="integer"/>
+        <attr name="lineDistance" format="integer"/>
+        <attr name="progressMax" format="integer"/>
+        <attr name="progressTextSize" format="integer"/>
+        <attr name="progressDesc" format="string"/>
+        <attr name="arcText" format="string"/>
+        <attr name="arcTextTextSize" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="MyProgressBar" >
+        <!-- 进度条默认的样式 -->
+        <attr name="back_line_color" format="color"/>
+        <attr name="back_line_height" format="dimension"/>
+        <!-- 展示进度的样式 -->
+        <attr name="fore_line_color" format="color"/>
+        <attr name="fore_line_height" format="dimension"/>
+        <!-- 三角形的颜色和高度 -->
+        <attr name="indicator_color" format="color"/>
+        <attr name="indicator_height" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星大小-->
+        <attr format="dimension" name="starSize"/>
+        <!--星星个数-->
+        <attr format="integer" name="starCount"/>
+        <!--星星空图-->
+        <attr format="reference" name="starEmpty"/>
+        <!--星星满图-->
+        <attr format="reference" name="starFill"/>
+        <!--是否可以点击-->
+        <attr format="boolean" name="isShow"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

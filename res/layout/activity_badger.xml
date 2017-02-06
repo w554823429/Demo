@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+            android:id="@+id/textViewHomePackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+    <EditText
+            android:id="@+id/numInput"
+            android:layout_below="@id/textViewHomePackage"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            />
+
+    <Button android:id="@+id/btnSetBadge"
+            android:layout_below="@id/numInput"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Set badge"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+    <Button android:id="@+id/btnRemoveBadge"
+        android:layout_below="@id/btnSetBadge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Remove badge"
+        android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+</LinearLayout>

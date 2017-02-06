@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+            xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.example.demo.starbar.StarBar
+        android:id="@+id/starBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ratingbar:starEmpty="@drawable/star_nil"
+        ratingbar:starFill="@drawable/star_full2"
+        ratingbar:starDistance="5dp"
+        ratingbar:starCount="5"
+        ratingbar:starSize="50dp"
+        ratingbar:isShow="false"/>
+    
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    
+	    
+	    <com.example.demo.tagView.TagFlowLayout
+	        android:id="@+id/id_flowlayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:padding="20dp"
+	        zhy:max_select="-1" ></com.example.demo.tagView.TagFlowLayout>
+
+</LinearLayout>
